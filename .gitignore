@@ -1,0 +1,7 @@
+main.aux
+main.dvi
+main.log
+*.gz
+# .gitignore
+QuestionsHard/*.aux
+QuestionsEasy/*.aux
