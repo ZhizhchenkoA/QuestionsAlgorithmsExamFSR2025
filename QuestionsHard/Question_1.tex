@@ -1,1 +1,29 @@
 \section{Основная теорема для рекуррентных соотношений. Схема доказательства.}
+
+\textbf{Теорема\\}
+ Пусть $T(n)=a\cdot T(\lceil n/b\rceil)+O(n^d)$. Тогда
+$$
+T(n)=\begin{cases}O(n^d), &d>\log_ba\\O(n^d\log n), &d=\log_ba\\O(n^{\log_ba}), &d<\log_ba\end{cases},
+$$
+
+где $a \ge 1$ --- количество частей, на которые мы дробим задачу, $b>1$ --- во сколько раз легче становится решить задачу, $d$ --- степень сложности входных данных.
+%\begin{comment}
+%	Здесь подразумевается, что $T(1)=O(1)$.\\
+%	Пример дерева рекурсий вы видели ранее в 7 билете.
+%\end{comment} 
+
+
+
+\textbf{Схема доказательства:}\\
+Рассмотрим дерево рекурсии данного соотношения. Всего в нем будет $\log_bn$ уровней. На каждом таком уровне, количество детей в дереве будет умножаться на $a$ $\>$~на уровне $i$ будет $a^i$ потомков. Также известно, что каждый ребенок на уровне $i$ размера $\dfrac{n}{b^i}$. Ребенок размера $\dfrac{n}{b^i}$ требует $O\bigg(\Big(\dfrac{n}{b^i}\Big)^d\bigg)$ дополнительных затрат, поэтому общее количество совершенных действий на уровне $i$: $$O\left(a^i\cdot\left(\frac{n}{b^i}\right)^d\right)=O\left(n^d\cdot\Big(\frac{a^i}{b^{id}}\Big)\right)=O\left(n^d\cdot\left(\frac{a}{b^d}\right)^i\right)$$
+Решение разбивается на три случая: когда $\dfrac{a}{b^d}$ больше 1, равна 1 или меньше 1. Переход между этими случаями осуществляется при
+$$\frac{a}{b^d}=1\Leftrightarrow a=b^d\Leftrightarrow\log_ba=d\cdot\log_bb\Leftrightarrow\log_ba=d$$
+Распишем всю работу в течение рекурсивного спуска:
+$$T(n)=\sum\limits_{i=0}^{\log_bn}O\left(n^d\left(\frac{a}{b^d}\right)^i\right)+O(1)=O\Bigg(n^d\cdot\sum\limits_{i=0}^{\log_bn}\left(\frac{a}{b^d}\right)^i\Bigg)$$
+Отсюда получаем:
+\begin{enumerate}
+	\item $d>\log_ba\Rightarrow T(n)=O(n^d)$ (так как $\left(\dfrac{a}{b^d}\right)^i$ --- бесконечно убывающая геометрическая прогрессия)
+	\item $d=\log_ba\Rightarrow T(n)=O\Bigg(n^d\cdot\sum\limits_{i=0}^{\log_bn}\left(\dfrac{a}{b^d}\right)^i\Bigg)=$\\
+	$=O\Bigg(n^d\cdot\sum\limits_{i=0}^{\log_bn}\left(1\right)^i\Bigg)=O(n^d+n^d\cdot\log_bn)=O(n^d\cdot\log_bn)$
+	\item $d<\log_ba\Rightarrow T(n)=O\Bigg(n^d\cdot\sum\limits_{i=0}^{\log_bn}\left(\dfrac{a}{b^d}\right)^i\Bigg)=O\left(n^d\cdot\left(\dfrac{a}{b^d}\right)^{\log_bn}\right)$, но $$n^d\cdot\left(\frac{a}{b^d}\right)^{\log_bn}=n^d\cdot\left(\frac{a^{\log_bn}}{b^{d\log_bn}}\right)=n^d\cdot\left(\frac{n^{\log_ba}}{n^d}\right)=n^{\log_ba}\Rightarrow T(n)=O(n^{\log_ba})$$
+\end{enumerate}
