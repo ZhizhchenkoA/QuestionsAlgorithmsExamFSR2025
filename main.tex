@@ -8,6 +8,24 @@
 \usepackage{geometry}
 \usepackage{titlesec}
 \usepackage{amsmath}
+\usepackage{color}
+\usepackage{tikz}
+
+\usepackage{listings}
+\lstdefinestyle{custom}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C++,
+	showstringspaces=false,
+	basicstyle=\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+} 
+
 \sloppy
 
 \geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
@@ -51,7 +69,7 @@
 \include{QuestionsEasy/Question_13.tex}
 \include{QuestionsEasy/Question_14.tex}
 \include{QuestionsEasy/Question_15.tex}
-
+\setcounter{section}{0} 
 \include{QuestionsHard/Question_1.tex}
 \include{QuestionsHard/Question_2.tex}
 \include{QuestionsHard/Question_3.tex}
