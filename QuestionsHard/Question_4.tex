@@ -58,7 +58,7 @@ function siftDown(i : int):
 
 \begin{verbatim}
 function siftUp(i : int):
-    while a[i] < a[(i - 1) / 2]     // i  0 — мы в корне
+    while a[i] < a[(i - 1) / 2]     // i = 0 - мы в корне
         swap(a[i], a[(i - 1) / 2])
         i = (i - 1) / 2
 \end{verbatim}
@@ -95,3 +95,16 @@ function insert(key : int):
     a[a.heapSize - 1] = key
     siftUp(a.heapSize - 1)
 \end{verbatim}
+
+\subsection*{Реализация на указателях}
+Для реализации кучи на указателях понадобится представить её в виде обычного бинарного дерева, один элемент которого будет содержать в себе указатель на левого, правого потомков и родителя.
+Пример на языке Си
+
+\begin{verbatim}
+struct heap_node{
+    int key;
+    struct heap_node *right, *left, *parent;
+};
+\end{verbatim}
+
+Операции

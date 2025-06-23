@@ -97,9 +97,9 @@
 Её можно вычислять как по строкам, так и по столбцам.
 Псевдокод алгоритма, написанный при произвольных ценах замен, вставок и удалений (важно помнить, что элементы нумеруются с 1):
 
-\begin{verbatim}
-int levensteinInstruction(String s1, String s2,
-        int InsertCost, int DeleteCost, int ReplaceCost):
+\begin{minted}{c}
+int levensteinInstruction(String s1, String s2, 
+		int InsertCost, int DeleteCost, int ReplaceCost):
   D[0][0] = 0
   for j = 1 to N
     D[0][j] = D[0][j - 1] + InsertCost                  
@@ -113,7 +113,7 @@ int levensteinInstruction(String s1, String s2,
       else 
          D[i][j] = D[i - 1][j - 1]
   return D[M][N]
-\end{verbatim}
+\end{minted}
 
 Этот псевдокод решает простой частный случай, когда вставка символа, удаление символа и замена одного символа на другой стоят одинаково для любых символов.
 
@@ -121,11 +121,11 @@ int levensteinInstruction(String s1, String s2,
 Заметим, что для вычисления $D[i]$ нам нужно только $D[i-1]$, поэтому будем вычислять $D[i]$ в $D[1]$, а $D[i-1]$ в $D[0]$.
 Осталось только поменять местами $D[1]$ и $D[0]$.
 
-\begin{verbatim}
+\begin{minted}{c}
 int levensteinInstruction(int[] D):
   for i = 0 to M
     for j = 0 to N
       вычислить D[1][j]
     swap(D[0], D[1])
   return D[0][N]
-\end{verbatim}
+\end{minted}

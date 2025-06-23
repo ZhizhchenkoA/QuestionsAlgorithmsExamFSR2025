@@ -5,3 +5,4 @@ main.log
 # .gitignore
 QuestionsHard/*.aux
 QuestionsEasy/*.aux
+_minted-main
