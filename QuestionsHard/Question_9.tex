@@ -88,7 +88,7 @@ vector<int> rabinKarp (s : string, w : string):
 
 \subsubsection{Псевдокод}
 
-\begin{verbatim}
+\begin{minted}{c}
 int[] kmp(string P, string T):
    int pl = P.length
    int tl = T.length
@@ -99,7 +99,7 @@ int[] kmp(string P, string T):
       if p[pl + i + 1] == pl
          answer[count++] = i - pl
    return answer
-\end{verbatim}
+\end{minted}
 
 \subsubsection{Время работы}
 
@@ -139,11 +139,11 @@ int[] kmp(string P, string T):
 
 Бор храним как набор вершин, у каждой из которых есть метка, обозначающая, является ли вершина терминальной и указатели (рёбра) на другие вершины или на NULL.
 
-\begin{verbatim}
+\begin{minted}{c}
 struct vertex:
     vertex next[|S|] 
     bool isTerminal
-\end{verbatim}
+\end{minted}
 
 \begin{enumerate}
     \item Создадим дерево из одной вершины (в нашем случае --- корня).

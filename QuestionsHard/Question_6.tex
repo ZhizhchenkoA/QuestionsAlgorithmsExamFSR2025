@@ -1,33 +1,80 @@
 \section{Потоки в сетях. Задача о максимальном потоке. Алгоритм Форда – Фалкерсона.}
 Введём необходимые определения
-
+\begin{definition}
 \textbf{Сеть} $G = (V, E)$  --- ориентированный граф, в котором:
 \begin{enumerate}
 	\item каждое ребро $(u,v) \in E$
 	имеет положительную пропускную способность $c(u, v) > 0$ (англ. capacity). Если $(u, v) \notin E$, то $c(u, v) = 0$,
 	\item выделены две вершины --- \textbf{исток} $s$ и \textbf{сток} $s$.
 \end{enumerate}
+\end{definition}
 
-\textbf{Поток} (англ. flow) $f$ в $G$ --- действительная функция $f: V \times V \to \mathbb{R}$, удовлетворяющая условиям:
+\begin{definition}
+	\textbf{Поток} (англ. flow) $f$ в $G$ --- действительная функция $f: V \times V \to \mathbb{R}$, удовлетворяющая условиям:
+	\begin{enumerate}
+		\item $f(u, v) = -f(v, u)$ (антисимметричность);
+		\item $f(u, v) \le c(u, v)$ (ограничение пропускной способности), если ребра нет, то $f(u, v) = 0$;
+		\item $\sum_v f(u, v) = 0$ для всех вершин $u$, кроме $s$ и $t$ (закон сохранения потока).
+	\end{enumerate}
+\end{definition}
 
-\begin{enumerate}
-	\item $f(u, v) = -f(v, u)$ (антисимметричность);
-	\item $f(u, v) \le c(u, v)$ (ограничение пропускной способности), если ребра нет, то $f(u, v) = 0$;
-	\item $\sum_v f(u, v) = 0$ для всех вершин $u$, кроме $s$ и $t$ (закон сохранения потока).
-\end{enumerate}
+\begin{definition}
+	 \textbf{Величина потока} $f$ определяется как $$\displaystyle |f| = \sum_{v \in V} f(s, v) = \sum_{v \in V} f(v,t)$$.
+\end{definition}
 
-\noindent \textbf{Величина потока} $f$ определяется как $\displaystyle |f| = \sum_{v \in V} f(s, v) = \sum_{v \in V} f(v,t)$.
 
 В задаче о \textbf{нахождении максимального потока} дана некоторая сеть $G$ с истоком $s$ и стоком $t$ и требуется найти поток максимальной величины.
 
+Дальнейшие определения нам понадобятся для формулировки самого алгоритма
+\begin{definition}
+	\textbf{Остаточной пропускной способностью} (англ. residual capacity) ребра $(u,v)$ называется величина дополнительного потока, который мы можем направить из $u$ в $v$, не превысив пропускную способность $c(u,v)$. Иными словами
+	$$c_f(u,v) = c(u,v) - f(u,v).$$
+\end{definition}
+
+\begin{definition}
+	Для заданной транспортной сети $G=(V,E)$ и потока $f$, \textbf{остаточной сетью} (дополняющая сеть, англ. residual network) в $G$, порожденной потоком $f$, является сеть $G_f=(V,E_f)$, где $E_f=\{(u,v) \in V \times V \mid c_f(u,v) > 0\}$.
+\end{definition}
+
+\begin{definition}
+	Для заданной транспортной сети $G=(V,E)$ и потока $f$ \textbf{дополняющим путем} (англ. augmenting path) $p$ является простой путь из \textbf{истока} в \textbf{сток} в остаточной сети $G_f=(V,E_f)$.
+\end{definition}
+
+\begin{definition}
+	
+Определения, которые понадобятся для доказательства корректности алгоритма
+\textbf{$(s,t)$-разрезом} (англ. $s$-$t$ cut) $\langle S,T \rangle$ в сети $G$ называется пара множеств $S, T$, удовлетворяющих условиям:
+\begin{enumerate}
+	\item $s \in S, t \in T$
+	\item $S = V \setminus T$
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+\textbf{Пропускная способность разреза} (англ. capacity of the cut) $\langle S,T \rangle$ обозначается $c(S,T)$ и вычисляется по формуле:
+$$c(S,T) = \sum_{u \in S} \sum_{v \in T} c(u, v).$$
+\end{definition}
+
+\begin{definition}
+	\textbf{Поток в разрезе }(англ. flow in the cut) $\langle S,T \rangle$ обозначается $f(S,T)$ и вычисляется по формуле:
+	$$f(S,T) = \sum_{u \in S} \sum_{v \in T} f(u, v).$$
+\end{definition}
  
-\subsection*{Алгоритм Форда-Фалкерсона}
 
-\begin{verbatim}
-ddd
-dddd
-\end{verbatim}
 
+\begin{definition}
+	\textbf{Минимальным разрезом} (англ. minimum cut) называется разрез с минимально возможной пропускной способностью.
+	
+\end{definition}
+
+Сначала найдём связь между максимальным потоком и потоком через разрез
+
+\begin{theorem}{(Форд --- Фалкерсон)}\\
+	Поток через минимальный разрез равен максимальному потоку.
+\end{theorem}
+
+\begin{proof}
+	Поток	
+\end{proof}
 
 
 

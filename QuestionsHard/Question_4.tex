@@ -33,7 +33,7 @@
 В противном случае меняем местами $i$-й элемент с наименьшим из его сыновей, после чего выполняем siftDown для этого сына.
 Процедура выполняется за время $O(\log n)$.
 
-\begin{verbatim}
+\begin{minted}{c}
 function siftDown(i : int):
     while 2 * i + 1 < a.heapSize     // heapSize — количество элементов в куче
         left = 2 * i + 1             // left — левый сын
@@ -45,7 +45,7 @@ function siftDown(i : int):
             break
         swap(a[i], a[j])
         i = j
-\end{verbatim}
+\end{minted}
 
 \subsubsection{siftUp}
 
@@ -56,12 +56,12 @@ function siftDown(i : int):
 Иными словами, слишком маленький элемент всплывает наверх.
 Процедура выполняется за время $O(\log n)$.
 
-\begin{verbatim}
+\begin{minted}{c}
 function siftUp(i : int):
     while a[i] < a[(i - 1) / 2]     // i = 0 - мы в корне
         swap(a[i], a[(i - 1) / 2])
         i = (i - 1) / 2
-\end{verbatim}
+\end{minted}
 
 \subsection{Извлечение минимального элемента}
 
@@ -75,36 +75,64 @@ function siftUp(i : int):
     \item Сохранённый элемент возвращается.
 \end{enumerate}
 
-\begin{verbatim}
+\begin{minted}{c}
 int extractMin():
     int min = a[0]
     a[0] = a[a.heapSize - 1]
     a.heapSize = a.heapSize - 1
     siftDown(0)
     return min
-\end{verbatim}
+\end{minted}
 
 \subsection{Добавление нового элемента}
 
 Выполняет добавление элемента в кучу за время $O(\log n)$.
 Сначала производится добавление произвольного элемента в конец кучи, затем восстановление свойства упорядоченности с помощью процедуры siftUp.
 
-\begin{verbatim}
-function insert(key : int):
+\begin{minted}{c}
+void insert(key : int):
     a.heapSize = a.heapSize + 1
     a[a.heapSize - 1] = key
     siftUp(a.heapSize - 1)
-\end{verbatim}
+\end{minted}
 
 \subsection*{Реализация на указателях}
 Для реализации кучи на указателях понадобится представить её в виде обычного бинарного дерева, один элемент которого будет содержать в себе указатель на левого, правого потомков и родителя.
 Пример на языке Си
 
-\begin{verbatim}
+\begin{minted}{c}
 struct heap_node{
     int key;
     struct heap_node *right, *left, *parent;
 };
-\end{verbatim}
+\end{minted}
 
-Операции
+\subsection*{Построение кучи}
+Дан неупорядоченный массив $a[n]$.
+Требуется построить двоичную кучу.
+\begin{enumerate}
+	\item
+\begin{itemize}
+	\item \text{min} в корне (\text{max} в корне). Делаем нулевой элемент корневым,
+	\item а дальше по очереди добавляем все элементы в конец кучи,
+	\item и каждый раз запускаем \texttt{siftUp} (\texttt{siftDown}).
+\end{itemize}
+\textbf{Сложность:} $O(n \log n)$ --- каждый из $n$ элементов за $O(\log n)$.
+\item
+
+Представим, что в массиве хранится дерево ($a[0]$ --- корень, потомки $a[i]$ --- $a[2i+1]$ и $a[2i+2]$).
+Делаем \texttt{siftDown} для вершин, имеющих хотя бы одного потомка: от $\frac{n}{2}$ до $0$.
+(Т.к. поддеревья, состоящие из одной вершины, уже упорядочены).
+После вызова \texttt{siftDown} для вершины её поддеревья являются кучами.
+Значит, после выполнения всех \texttt{siftDown} получим исходную кучу.
+
+\textbf{Сложность алгоритма:} $O(n)$
+
+\subsubsection*{Доказательство}
+Число вершин на высоте $h$ в куче из $n$ элементов не превосходит $\left\lceil \frac{n}{2^h} \right\rceil$. Высота кучи не превосходит $\log n$.
+Обозначим за $H$ высоту всего дерева, тогда время построения не превосходит:
+$$ \sum_{h=1}^H \frac{n}{2^h} \cdot 2h = 2n \sum_{h=1}^H \frac{h}{2^h} $$
+Известно, что $\displaystyle \sum_{h=1}^\infty \frac{h}{2^h} = 2$.
+Следовательно, время построения $\le 2n \cdot 2 = 4n = O(n)$.
+
+\end{enumerate}
