@@ -16,6 +16,8 @@
 \usepackage{caption}
 \usepackage{minted}
 \usepackage{enumitem} 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 \usepackage{listings}
 \lstset{
@@ -56,6 +58,8 @@
 \newtheorem{lemma}{Лемма}[section]
 \renewenvironment{proof}{\noindent \textbf{Доказательство.}}
 
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание} % Без номера
 % Document begins
 \begin{document}
 \begin{large}

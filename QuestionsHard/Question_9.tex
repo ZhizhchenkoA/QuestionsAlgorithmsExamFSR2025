@@ -43,7 +43,7 @@ $$hash(s[i+1..i+m])=(p \cdot hash(s[i+1..i+m-1])+s[i+m])\mod r.$$
 
 Приведем пример псевдокода, который находит все вхождения строки $w$ в строку $s$ и возвращает массив позиций, откуда начинаются вхождения.
 
-\begin{verbatim}
+\begin{minted}{c++}
 vector<int> rabinKarp (s : string, w : string):
    vector<int> answer
    int n = s.length
@@ -57,7 +57,7 @@ vector<int> rabinKarp (s : string, w : string):
 
  * hash(s[i]) + hash(s[i + m])) mod r // r — некоторое большое число, p — некоторое просто число
    return answer
-\end{verbatim}
+\end{minted}
 
 Новый хеш $hashS$ был получен с помощью быстрого пересчёта.
 Для сохранения корректности алгоритма нужно считать, что $s[n+1]$ --- пустой символ.
