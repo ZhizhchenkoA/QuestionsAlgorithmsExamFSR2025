@@ -43,15 +43,15 @@
     \end{enumerate}
 \end{proof}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{images/15_2.png}
-    \caption{Удаляем $BD$}
-\end{figure}
+%\begin{figure}
+%    \centering
+%%    \includegraphics[width=0.5\linewidth]{img/15_2.png}
+%    \caption{Удаляем $BD$}
+%\end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{images/15_3.png}
+    \includegraphics[width=0.5\linewidth]{img/15_3.png}
     \caption{Не удаляем $BS$}
 \end{figure}
 
@@ -80,7 +80,7 @@
 \end{definition}
 
 \begin{definition}
-    Отрицанием множества $S \subset R^2$ называется множество $-S:=\{−p:p \in S \}$, где $-p$ обозначает векторное отрицание.
+    Отрицанием множества $S \subset R^2$ называется множество $-S:=\{-p:p \in S \}$, где $-p$ обозначает векторное отрицание.
 \end{definition}
 
 \begin{theorem}
@@ -90,10 +90,10 @@
     Необходимо доказать, что робот $R(x,y)$ пересекает препятствие $P$ в том и только в том случае, если $(x,y) \in P \oplus (-R(0,0))$.
     
     Пусть робот задевает препятствие, и точка $q=(q_x,q_y)$ является точкой пересечения.
-    Тогда, так как $q \in R(x,y)$, то $(q_x−x,q_y−y) \in R(0,0)$, или $(x−q_x,y−q_y) \in −R(0,0)$.
+    Тогда, так как $q \in R(x,y)$, то $(q_x-x,q_y-y) \in R(0,0)$, или $(x-q_x,y-q_y) \in -R(0,0)$.
     А заметив, что $q \in P$, получаем $(x,y) \in P \oplus (-R(0,0))$.
 
-    В обратную сторону, пусть $(x,y) \in P \oplus (-R(0,0))$, тогда существуют точки $(r_x,r_y) \in R(0,0)$ и $(p_x,p_y) \in P$ такие, что $(x,y)=(p_x−r_x,p_y−r_y)$ или $(p_x,p_y)=(x+r_x,y+r_y)$, а это означает, что $R(x,y)$ пересекает $P$. 
+    В обратную сторону, пусть $(x,y) \in P \oplus (-R(0,0))$, тогда существуют точки $(r_x,r_y) \in R(0,0)$ и $(p_x,p_y) \in P$ такие, что $(x,y)=(p_x-r_x,p_y-r_y)$ или $(p_x,p_y)=(x+r_x,y+r_y)$, а это означает, что $R(x,y)$ пересекает $P$. 
 \end{proof}
 
 \begin{theorem}
