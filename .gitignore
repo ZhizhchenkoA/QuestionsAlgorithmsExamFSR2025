@@ -6,3 +6,4 @@ main.log
 QuestionsHard/*.aux
 QuestionsEasy/*.aux
 _minted-main
+*.out
