@@ -3,95 +3,97 @@
 \contentsline {section}{\numberline {2}Сортировка массива: пузырьковая, mergesort, quicksort. Алгоритмы и оценки сложности.}{7}{section.2}%
 \contentsline {section}{\numberline {3}Списки: односвзяный и двусвязный}{8}{section.3}%
 \contentsline {section}{\numberline {4}Бинарные деревья поиска. Вставка, удаление, оценки сложности.}{9}{section.4}%
-\contentsline {section}{\numberline {5}Графы. Способы их представления в памяти компьютера. Матрицы смежости, матрицы инцедентности, списки связности, представление на двух массивах (CSR).}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Матрица смежности}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Матрица инцидентности}{10}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Списки смежности}{10}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}CSR}{10}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Обходы графов. Обход в ширину, обход в глубину. }{11}{section.6}%
-\contentsline {section}{\numberline {7}Алгоритмы поиска кратчайших путей. Алгоритм Дейкстры, алгоритм Беллмана-Форда. }{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Алгоритм Дейкстры}{12}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Инициализация}{12}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Шаг алгоритма}{12}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}Время работы}{13}{subsubsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.2}Доказательство корректности алгоритма Дейкстры}{13}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Алгоритм Беллмана --- Форда}{14}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Идея алгоритма}{14}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Псевдокод}{15}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Время работы}{15}{subsubsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.4}Доказательство корректности алгоритма Беллмана-Форда}{15}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Остовные деревья. Алгоритмы Прима, Краскала, Борувки.}{17}{section.8}%
-\contentsline {section}{\numberline {9}Эвристики для поиска кратчайших путей, алгоритм~A*.}{18}{section.9}%
-\contentsline {section}{\numberline {10}Потоки в сетях. Максимальный поток и минимальный разрез.}{20}{section.10}%
-\contentsline {section}{\numberline {11} Хеш-функции. Коллизии. Хеш-таблицы. Хеширование. Фильтр Блюма.}{21}{section.11}%
-\contentsline {section}{\numberline {12}Предикат поворота. Задача пересечения двух отрезков}{22}{section.12}%
-\contentsline {section}{\numberline {13}Выпуклые оболочки, алгоритма Джарвиса, Грэхема и QuickHull.}{23}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Алгоритм Джарвиса}{23}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Алгоритм Грэхема}{24}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Алгоритм QuickHull}{25}{subsection.13.3}%
-\contentsline {section}{\numberline {14}kD-деревья. Окто- и квадро-деревья.}{26}{section.14}%
-\contentsline {subsection}{\numberline {14.1}kD-деревья}{26}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Октодеревья}{26}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3}Квадродеревья}{26}{subsection.14.3}%
-\contentsline {section}{\numberline {15}Многочлены. Метод Горнера. Умножение Карацубы.}{28}{section.15}%
-\contentsline {section}{\numberline {1}Основная теорема для рекуррентных соотношений. Схема доказательства.}{29}{section.1}%
-\contentsline {section}{\numberline {2}АВЛ-деревья. Повороты, балансировка.}{31}{section.2}%
-\contentsline {section}{\numberline {3}Красно-черные деревья. Балансировка (схема).}{33}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Операции}{34}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Вставка}{34}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Удаление}{34}{subsubsection.3.1.2}%
-\contentsline {section}{\numberline {4}Бинарные кучи. Реализация с указателями и на массиве. Добавление и удаление элемента в бинарную кучу. }{37}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Восстановление свойств кучи}{37}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}siftDown}{37}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}siftUp}{38}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Извлечение минимального элемента}{38}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Добавление нового элемента}{39}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Очереди с приоритетами. Наивная реализация, реализация на бинарной куче}{41}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Неотсортированный список}{41}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Отсортированный массив:}{42}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Реализация на бинарной куче }{42}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Потоки в сетях. Задача о максимальном потоке. Алгоритм Форда – Фалкерсона.}{43}{section.6}%
-\contentsline {section}{\numberline {7}Амортизационный анализ: групповой анализ, банковский метод. Амортизационный анализ для бинарного счетчика }{45}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Групповой анализ}{45}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Увеличение показаний бинарного счетчика}{45}{subsubsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.2}Метод бухгалтерского учёта}{47}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Увеличение показаний бинарного счетчика}{48}{subsubsection.7.2.1}%
-\contentsline {section}{\numberline {8}Амортизационный анализ: метод потенциалов для динамического массива. }{49}{section.8}%
-\contentsline {subsubsection}{\numberline {8.0.1}Расширение динамической таблицы}{49}{subsubsection.8.0.1}%
-\contentsline {section}{\numberline {9}Алгоритм Рабина --- Карпа, алгоритм Кнута --- Морриса -- Пратта. Структура данных «бор», алгоритм Ахо --- Корасик}{53}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Алгоритм Рабина --- Карпа}{53}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Алгоритм}{54}{subsubsection.9.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.2}Псевдокод}{54}{subsubsection.9.1.2}%
-\contentsline {subsubsection}{\numberline {9.1.3}Время работы}{55}{subsubsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.2}Алгоритм Кнута --- Морриса --- Пратта}{55}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}Алгоритм}{55}{subsubsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.2}Псевдокод}{55}{subsubsection.9.2.2}%
-\contentsline {subsubsection}{\numberline {9.2.3}Время работы}{56}{subsubsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.4}Оценка по памяти}{56}{subsubsection.9.2.4}%
-\contentsline {subsection}{\numberline {9.3}Структура данных «бор»}{56}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Пример}{56}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Построение}{56}{subsubsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.4}Алгоритм Ахо --- Корасик.}{57}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Шаг 1. Построение бора}{57}{subsubsection.9.4.1}%
-\contentsline {subsubsection}{\numberline {9.4.2}Шаг 2. Преобразование бора}{57}{subsubsection.9.4.2}%
-\contentsline {subsubsection}{\numberline {9.4.3}Пример автомата Ахо-Корасик}{58}{subsubsection.9.4.3}%
-\contentsline {subsubsection}{\numberline {9.4.4}Шаг 3. Построение сжатых суффиксных ссылок}{59}{subsubsection.9.4.4}%
-\contentsline {subsubsection}{\numberline {9.4.5}Использование автомата}{59}{subsubsection.9.4.5}%
-\contentsline {section}{\numberline {10}Алгоритм Бойера-Мура. Эвристики стоп-символа и хорошего суффикса.}{60}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Эвристика хорошего суффикса}{60}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Эвристика стоп-символа}{60}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Расстояние Левенштейна, алгоритм Вагнера --- Фишера}{63}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Алгоритм Вагнера --- Фишера}{65}{subsection.11.1}%
-\contentsline {section}{\numberline {12}Сканирующая прямая. Алгоритм Бентли-Оттоманна для поиска пересечения отрезков}{67}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Наивный алгоритм}{67}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Алгоритм Бентли --- Оттмана}{67}{subsection.12.2}%
-\contentsline {section}{\numberline {13}Диаграммы Вороного. Алгоритм Форчуна. }{70}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Алгоритм Форчуна}{73}{subsection.13.1}%
-\contentsline {section}{\numberline {14}Триангуляция Делоне, связь с диаграммами Вороного. Алгоритм построения }{82}{section.14}%
-\contentsline {section}{\numberline {15}Сумма Минковского. Задача планирования движения робота в среде с препятствиями. Граф видимости.}{83}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Граф видимости}{83}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Планирование движения}{84}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3}Сумма Минковского}{84}{subsection.15.3}%
-\contentsline {subsubsection}{\numberline {15.3.1}Псевдокод}{85}{subsubsection.15.3.1}%
-\contentsline {subsubsection}{\numberline {15.3.2}Случай невыпуклых фигур}{86}{subsubsection.15.3.2}%
-\contentsline {section}{\numberline {16}Отсечение невидимых поверхностей. Z-буфер и алгоритм художника.}{87}{section.16}%
+\contentsline {section}{\numberline {5}Графы. Способы их представления в памяти компьютера. Матрицы смежости, матрицы инцедентности, списки связности, представление на двух массивах (CSR).}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Матрица смежности}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Матрица инцидентности}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Список смежности}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}CSR (Compressed Sparse Row)}{13}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Обходы графов. Обход в ширину, обход в глубину. }{15}{section.6}%
+\contentsline {section}{\numberline {7}Алгоритмы поиска кратчайших путей. Алгоритм Дейкстры, алгоритм Беллмана-Форда. }{18}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Алгоритм Дейкстры}{18}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Инициализация}{18}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Шаг алгоритма}{18}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Время работы}{19}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Доказательство корректности алгоритма Дейкстры}{19}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Алгоритм Беллмана --- Форда}{20}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Идея алгоритма}{20}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Псевдокод}{21}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Время работы}{21}{subsubsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.4}Доказательство корректности алгоритма Беллмана-Форда}{21}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Остовные деревья. Алгоритмы Прима, Краскала, Борувки.}{23}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Алгоритм Краскала}{23}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Алгоритм Прима}{23}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Алгоритм Борувки}{24}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Эвристики для поиска кратчайших путей, алгоритм~A*.}{25}{section.9}%
+\contentsline {section}{\numberline {10}Потоки в сетях. Максимальный поток и минимальный разрез.}{27}{section.10}%
+\contentsline {section}{\numberline {11} Хеш-функции. Коллизии. Хеш-таблицы. Хеширование. Фильтр Блюма.}{28}{section.11}%
+\contentsline {section}{\numberline {12}Предикат поворота. Задача пересечения двух отрезков}{31}{section.12}%
+\contentsline {section}{\numberline {13}Выпуклые оболочки, алгоритма Джарвиса, Грэхема и QuickHull.}{33}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Алгоритм Джарвиса}{33}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Алгоритм Грэхема}{34}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Алгоритм QuickHull}{35}{subsection.13.3}%
+\contentsline {section}{\numberline {14}kD-деревья. Окто- и квадро-деревья.}{36}{section.14}%
+\contentsline {section}{\numberline {15}Многочлены. Метод Горнера. Умножение Карацубы.}{38}{section.15}%
+\contentsline {section}{\numberline {1}Основная теорема для рекуррентных соотношений. Схема доказательства.}{39}{section.1}%
+\contentsline {section}{\numberline {2}АВЛ-деревья. Повороты, балансировка.}{41}{section.2}%
+\contentsline {section}{\numberline {3}Красно-черные деревья. Балансировка (схема).}{43}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Операции}{44}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Вставка}{44}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Удаление}{44}{subsubsection.3.1.2}%
+\contentsline {section}{\numberline {4}Бинарные кучи. Реализация с указателями и на массиве. Добавление и удаление элемента в бинарную кучу. }{47}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Восстановление свойств кучи}{47}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}siftDown}{47}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}siftUp}{48}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Извлечение минимального элемента}{48}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Добавление нового элемента}{49}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Очереди с приоритетами. Наивная реализация, реализация на бинарной куче}{51}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Неотсортированный список}{51}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Отсортированный массив:}{52}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Реализация на бинарной куче }{52}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Потоки в сетях. Задача о максимальном потоке. Алгоритм Форда – Фалкерсона.}{53}{section.6}%
+\contentsline {section}{\numberline {7}Амортизационный анализ: групповой анализ, банковский метод. Амортизационный анализ для бинарного счетчика }{56}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Групповой анализ}{56}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Увеличение показаний бинарного счетчика}{56}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Метод бухгалтерского учёта}{58}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Увеличение показаний бинарного счетчика}{59}{subsubsection.7.2.1}%
+\contentsline {section}{\numberline {8}Амортизационный анализ: метод потенциалов для динамического массива. }{60}{section.8}%
+\contentsline {subsubsection}{\numberline {8.0.1}Расширение динамической таблицы}{60}{subsubsection.8.0.1}%
+\contentsline {section}{\numberline {9}Алгоритм Рабина --- Карпа, алгоритм Кнута --- Морриса -- Пратта. Структура данных «бор», алгоритм Ахо --- Корасик}{64}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Алгоритм Рабина --- Карпа}{64}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Алгоритм}{65}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Псевдокод}{65}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Время работы}{66}{subsubsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.2}Алгоритм Кнута --- Морриса --- Пратта}{66}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Алгоритм}{66}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Псевдокод}{66}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}Время работы}{67}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}Оценка по памяти}{67}{subsubsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.3}Структура данных «бор»}{67}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Пример}{67}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Построение}{67}{subsubsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.4}Алгоритм Ахо --- Корасик.}{68}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Шаг 1. Построение бора}{68}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}Шаг 2. Преобразование бора}{68}{subsubsection.9.4.2}%
+\contentsline {subsubsection}{\numberline {9.4.3}Пример автомата Ахо-Корасик}{69}{subsubsection.9.4.3}%
+\contentsline {subsubsection}{\numberline {9.4.4}Шаг 3. Построение сжатых суффиксных ссылок}{70}{subsubsection.9.4.4}%
+\contentsline {subsubsection}{\numberline {9.4.5}Использование автомата}{70}{subsubsection.9.4.5}%
+\contentsline {section}{\numberline {10}Алгоритм Бойера-Мура. Эвристики стоп-символа и хорошего суффикса.}{71}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Эвристика хорошего суффикса}{71}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Эвристика стоп-символа}{72}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Расстояние Левенштейна, алгоритм Вагнера --- Фишера}{74}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Алгоритм Вагнера --- Фишера}{76}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Сканирующая прямая. Алгоритм Бентли-Оттоманна для поиска пересечения отрезков}{78}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Наивный алгоритм}{78}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Алгоритм Бентли --- Оттмана}{78}{subsection.12.2}%
+\contentsline {section}{\numberline {13}Диаграммы Вороного. Алгоритм Форчуна. }{81}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Алгоритм Форчуна}{84}{subsection.13.1}%
+\contentsline {section}{\numberline {14}Триангуляция Делоне, связь с диаграммами Вороного. Алгоритм построения }{93}{section.14}%
+\contentsline {section}{\numberline {15}Сумма Минковского. Задача планирования движения робота в среде с препятствиями. Граф видимости.}{96}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Граф видимости}{96}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Планирование движения}{97}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Сумма Минковского}{97}{subsection.15.3}%
+\contentsline {subsubsection}{\numberline {15.3.1}Псевдокод}{98}{subsubsection.15.3.1}%
+\contentsline {subsubsection}{\numberline {15.3.2}Случай невыпуклых фигур}{99}{subsubsection.15.3.2}%
+\contentsline {section}{\numberline {16}Отсечение невидимых поверхностей. Z-буфер и алгоритм художника.}{100}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Алгоритм z-буфера (z-buffer algorithm)}{100}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}BSP-деревья}{102}{subsection.16.2}%
